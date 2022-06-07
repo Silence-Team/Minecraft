@@ -1,0 +1,41 @@
+name: Баг
+description: Оправить сообщение об ошибке
+title: "[Баг]: "
+labels: ["баг"]
+assignees:
+  - EvanQube
+body:
+  - type: input
+    id: discord
+    attributes:
+      label: Дискорд
+      description: Укажите ваш никнейм и тэг в Дискорде
+      placeholder: "Пример: EvanEnev#6456"
+    validations:
+      required: true
+  - type: input
+    id: minecraft
+    attributes:
+      label: Ник в Minecraft
+      description: Укажите ваш ник на сервере
+      placeholder: "Пример: EvanCube"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Что случилось ?
+      description: Также опишите, что вы ожидали увидеть
+      placeholder: Расскажите, что вы видели
+      value: "Не появляется меню, хотя должно"
+    validations:
+      required: true
+  - type: textarea
+      id: what-preceed
+      attributes:
+        label: Что предшествовало ?
+        description: Опишите, что происходило до ошибки
+        placeholder: Расскажите, что вы видели
+        value: "Написал команду /class"
+      validations:
+        required: true
