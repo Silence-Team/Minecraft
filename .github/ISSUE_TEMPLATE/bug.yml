@@ -31,7 +31,7 @@ body:
     validations:
       required: true
   - type: textarea
-      id: what-preceed
+      id: what-preceded
       attributes:
         label: Что предшествовало ?
         description: Опишите, что происходило до ошибки
