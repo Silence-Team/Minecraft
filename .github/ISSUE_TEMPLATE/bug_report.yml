@@ -1,5 +1,5 @@
-name: Баг
-description: Оправить сообщение об ошибке
+name: "Баг"
+description: "Оправить сообщение об ошибке"
 title: "[Баг]: "
 labels: ["баг"]
 assignees:
@@ -21,7 +21,7 @@ body:
       placeholder: "Пример: EvanCube"
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: what-happened
     attributes:
       label: Что случилось ?
@@ -30,12 +30,12 @@ body:
       value: "Не появляется меню, хотя должно"
     validations:
       required: true
-  - type: textarea
-      id: what-preceded
-      attributes:
-        label: Что предшествовало ?
-        description: Опишите, что происходило до ошибки
-        placeholder: Расскажите, что вы видели
-        value: "Написал команду /class"
-      validations:
-        required: true
+  - type: input
+    id: what-preceded
+    attributes:
+      label: Что предшествовало ?
+      description: Опишите, что происзодило до ошибки
+      placeholder: Расскажите, что вы видели
+      value: "Использовал команду /class"
+    validations:
+      required: true
